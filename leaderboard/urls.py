@@ -16,11 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from api import urls as api_urls
+from api.views import loader
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^user/', include('user.urls')),
-    
+    url(r'^loaderio-(?P<code>\w+)/', loader),
 ]
 
 # JUST FOR NAMING

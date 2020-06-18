@@ -27,3 +27,10 @@ class ScoreSubmitView(views.APIView):
         new_score = serializer.save()
         return response.Response(
             {"new_score": new_score}, status=status.HTTP_201_CREATED)
+
+
+from django.http import HttpResponse
+
+
+def loader(request, code):
+    return HttpResponse('loaderio-%s' % code)
