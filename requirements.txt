@@ -4,7 +4,7 @@ backcall==0.2.0
 decorator==4.4.2
 distlib==0.3.0
 Django==3.0.7
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 filelock==3.0.12
 flake8==3.8.3
 gevent==20.6.2
